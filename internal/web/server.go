@@ -455,11 +455,12 @@ nav a:focus { outline: 2px solid var(--color-primary); outline-offset: 2px; }
 nav a:active { transform: translateY(0); background: var(--color-primary); color: var(--color-bg); }
 .stats { display: flex; gap: var(--spacing-sm); justify-content: center; flex-wrap: wrap; margin-bottom: var(--spacing-md); font-size: 0.875rem; color: var(--color-text-muted); }
 .stat { background: var(--color-surface); padding: var(--spacing-xs) var(--spacing-sm); border-radius: var(--radius-full); }
-.search-form { display: flex; flex-direction: column; gap: var(--spacing-xs); margin-bottom: var(--spacing-md); }
+.search-form { display: flex; flex-direction: column; gap: var(--spacing-sm); margin-bottom: var(--spacing-lg); }
 .search-form label { font-size: 0.875rem; color: var(--color-text-muted); }
 .search-form input {
-  padding: var(--spacing-sm);
-  font-size: 1rem;
+  width: 100%;
+  padding: var(--spacing-md);
+  font-size: 1.125rem;
   border: 2px solid transparent;
   border-radius: var(--radius-md);
   background: var(--color-surface);
@@ -472,15 +473,15 @@ nav a:active { transform: translateY(0); background: var(--color-primary); color
   box-shadow: 0 0 0 3px var(--color-highlight);
 }
 .search-form button {
-  padding: var(--spacing-sm) var(--spacing-md);
-  font-size: 1rem;
+  padding: var(--spacing-md) var(--spacing-lg);
+  font-size: 1.125rem;
   border: none;
   border-radius: var(--radius-md);
   background: var(--color-primary);
   color: var(--color-bg);
   cursor: pointer;
   font-weight: 600;
-  min-height: 2.75rem;
+  min-height: 3rem;
   transition: background var(--transition), transform var(--transition), box-shadow var(--transition);
 }
 .search-form button:hover { background: var(--color-primary-hover); transform: translateY(-2px); box-shadow: var(--shadow); }
