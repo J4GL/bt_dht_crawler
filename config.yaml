@@ -1,0 +1,23 @@
+dht:
+  node_count: 50          # Number of DHT nodes (1-200)
+  start_port: 6881        # First UDP port
+  bootstrap:
+    - "router.bittorrent.com:6881"
+    - "dht.transmissionbt.com:6881"
+    - "router.utorrent.com:6881"
+
+cache:
+  max_size: 1000          # Flush when this many hashes
+  flush_interval: 30s     # Or flush every N seconds
+
+download:
+  workers: 4              # Number of download workers
+  per_worker: 100         # Concurrent downloads per worker
+  timeout: 30s            # Per-download timeout
+
+storage:
+  path: "crawler.db"      # SQLite database path
+
+web:
+  port: 8085              # HTTP server port
+  enabled: true
